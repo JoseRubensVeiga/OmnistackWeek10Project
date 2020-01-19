@@ -67,4 +67,16 @@ module.exports = {
       message: "Usuário alterado com sucesso!"
     })
   },
+
+  async destroy(req, res) {
+    const { github_username } = req.params;
+
+    await Dev.deleteOne({
+      github_username
+    });
+
+    return res.json({
+      message: "Usuário removido com sucesso!"
+    })
+  }
 }

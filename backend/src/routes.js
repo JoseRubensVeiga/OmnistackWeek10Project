@@ -11,5 +11,5 @@ routes.get('/search', SearchController.index);
 
 // Atividade opcional
 // routes.put('/devs/:github_username', DevController.update);
-// routes.delete('/devs/:github_username');
+routes.delete('/devs/:github_username', DevController.destroy);
 module.exports = routes;

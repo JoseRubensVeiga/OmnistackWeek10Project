@@ -10,8 +10,8 @@ function App() {
 
   const [devs, setDevs] = useState([]);
 
-  const handleRemoveDev = function() {
-    console.log('remover dev');
+  const handleRemoveDev = function(github_username) {
+    setDevs(devs.filter(dev => dev.github_username !== github_username));
   }
 
   return (

@@ -48,10 +48,6 @@ function Form(props) {
     setLatitude('');
     setLongitude('');
 
-    console.log({
-      devs: [...props.devs, response.data]
-    })
-
     props.setDevs([...props.devs, response.data])
   }
   
