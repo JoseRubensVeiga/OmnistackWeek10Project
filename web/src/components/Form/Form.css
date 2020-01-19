@@ -1,0 +1,23 @@
+.form-container {
+  background-color: white;
+}
+
+.btn-salvar {
+  background-color: #7d40e7;
+  color: white;
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: .4s;
+}
+
+.btn-salvar:hover {
+  cursor: pointer;
+  background-color: #6c37c7;
+  box-shadow: 4px 4px 10px #00000036;
+}

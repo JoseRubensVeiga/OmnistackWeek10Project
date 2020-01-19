@@ -1,0 +1,34 @@
+#app {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(196, 196, 196);
+  min-height: 100vh;
+  padding: 0 60px;
+}
+
+aside {
+  flex-grow: 1;
+  max-width: 400px;
+  padding-top: 100px;
+}
+
+main {
+  flex-grow: 2;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 860px) {
+  #app {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  aside {
+    max-width: none;
+    padding-top: 50px;
+  }
+
+  main {
+    padding-top: 30px;
+  }
+}

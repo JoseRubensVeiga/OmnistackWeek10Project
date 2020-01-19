@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --borderRadiuBase: 5px;
+  --boxShadowBase: 2px 3px 17px #00000036;
+  --paddingBase: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/* BEGIN UTILS */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.f-grow-1 {
+  flex-grow: 1;
+}
+
+.mb-4 {
+  margin-bottom: calc(var(--paddingBase) * 4) !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row > * {
+  width: 45%;
+}
+
+.form-group {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: gray;
+}
+
+.form-group input {
+  height: 30px;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  align-self: stretch;
+  padding-left: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+/* END UTILS */
+
+.main-card {
+  background-color: white;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: var(--borderRadiuBase);
+  box-shadow: var(--boxShadowBase);
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.main-title.line-bottom:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgb(161, 161, 161);
+  width: 80px;
+  padding-top: 2px;
+  margin: 0 auto;
+}

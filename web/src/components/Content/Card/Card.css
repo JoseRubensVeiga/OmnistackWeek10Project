@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .img-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header .user-name {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.header .user-techs {
+  font-size: .9rem;
+  color: #999;
+  margin-top: 5px;
+}
+
+.user-details-container {
+  margin-top: 5px;
+  color: #666;
+  font-size: .9rem;
+}
+
+.user-details-container .github-url {
+  color: rgb(175, 8, 175);
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.github-url:hover {
+  color: rgb(138, 5, 138);
+}
+
+.bio {
+  line-height: 1.4rem;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.float-right {
+  float: right;
+}
